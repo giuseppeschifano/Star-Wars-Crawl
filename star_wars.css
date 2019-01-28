@@ -1,0 +1,72 @@
+
+body {
+  background-color: white;
+  background-image: url("space.jpg");
+  background-size: cover;
+}
+
+h1  {
+  color: lightblue;
+  text-align: center;
+  background-color: transparent;
+}
+
+.text-container {
+  display: flex;
+  justify-content: center;
+}
+
+#text {
+  position: absolute;
+  width: 14em;
+	height: 50em;
+	bottom: 0;
+	left: 13.8em;
+	margin-left: -9em;
+	font-size: 350%;
+	font-weight: bold;
+  text-align: justify;
+  overflow: hidden;
+  transform-origin: 50% 100%;
+  transform: perspective(300px) rotateX(20deg);
+}
+
+#text:after {
+  position: absolute;
+  content: ' ';
+  left: 0;
+	right: 0;
+	top: 20%;
+	bottom: 60%;
+  background-image: linear-gradient(top, rgba(0,0,0,1) 0%, transparent 100%);
+}
+
+#text-content {
+  position: absolute;
+  top: 100%;
+  animation: scroll 120s linear 3s infinite;
+}
+
+@keyframes scroll {
+	0% { top: 100%; }
+	100% { top: -170%; }
+}
+
+p {
+  color: greenyellow;
+  text-align: center;
+  background-color: transparent;
+  font-size: 45px;
+}
+
+a {
+  color: lightblue;
+}
+
+img {
+  opacity: 0.5;
+}
+
+iframe {
+  opacity: 0.5;
+}
